@@ -8,11 +8,10 @@ import Following from './components/following';
 const Container = styled.div `
 background-color: dodgerblue;
 width: 100%;
-height:100vh;
+height:100%;
 h1{
   display: flex;
   justify-content: center;
-  padding: 50px;
   color:white;
 }
 `
@@ -42,9 +41,9 @@ class App extends React.Component {
   return (
   
     <Container>
-      <h1>GitCard User</h1>
-    
+      <h1>My Git Info:</h1>
     <GitUser eric={this.state.users} />
+    <h1>Following:</h1>
      <Following follow={this.state.following}/>
     </Container>
     

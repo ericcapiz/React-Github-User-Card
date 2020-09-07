@@ -19,7 +19,7 @@ display: flex;
 flex-direction: row;
 justify-content: center;
 align-items:center;
-margin-top: 10%;
+margin-top: 5%;
 `;
 
 const GitUser = (props)=>{

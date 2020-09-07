@@ -19,24 +19,21 @@ display: flex;
 flex-direction: row;
 justify-content: center;
 align-items:center;
-margin-top: 10%;
+margin-top: 5%;
+padding: 10px;
 `;
 
 
 const Following =(props)=>{
     return(
-        <div>
+        <CardCont>
            {props.follow.map((item)=>(
-               <div>
+               <Info>
                 <Image src={item.avatar_url} alt="profile pic"></Image>
-                <h2>Name: {item.name}</h2>
                 <h2>Git Handle: {item.login}</h2>
-                <h2>Location: {item.location}</h2>
-                <h2>Following: {item.following}</h2>
-                <h2>Number of Repos: {item.public_repos}</h2>
-                </div>
+                </Info>
       ))}  
-        </div>
+        </CardCont>
     )
 }
 export default Following;

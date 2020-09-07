@@ -28,7 +28,7 @@ const Following =(props)=>{
     return(
         <CardCont>
            {props.follow.map((item)=>(
-               <Info>
+               <Info key={item.id}>
                 <Image src={item.avatar_url} alt="profile pic"></Image>
                 <h2>Git Handle: {item.login}</h2>
                 </Info>
